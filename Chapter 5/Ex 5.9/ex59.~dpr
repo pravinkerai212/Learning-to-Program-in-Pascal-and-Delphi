@@ -1,0 +1,18 @@
+
+program ex59;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+const
+
+var
+  n, Counter : Integer;
+
+begin
+
+  { TODO -oUser -cConsole Main : Insert code here }
+end.
+ 

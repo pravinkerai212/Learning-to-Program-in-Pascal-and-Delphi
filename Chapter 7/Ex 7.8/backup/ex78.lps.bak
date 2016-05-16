@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="ex78.dpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="41"/>
+        <CursorPos X="8" Y="70"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="ex78.dpr"/>
+        <Caret Line="50" Column="67" TopLine="33"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ex78.dpr"/>
+        <Caret Line="54" Column="65" TopLine="33"/>
+      </Position2>
+      <Position3>
+        <Filename Value="ex78.dpr"/>
+        <Caret Line="58" Column="28" TopLine="33"/>
+      </Position3>
+      <Position4>
+        <Filename Value="ex78.dpr"/>
+        <Caret Line="71" Column="7" TopLine="39"/>
+      </Position4>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,49 @@
+program ex615;
+{
+Write a game in which the user guesses what random number between 1 and 1000
+the computer has 'thought of', until he or she has found the correct number.
+The computer should tell the user whether each guess was too high, too low, or spot on.
+}
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils, Math;
+
+var
+  UserGuess, ComputerGuess : Integer;
+
+begin
+Randomize;    // This should only be executed once to
+              // initialize the random number generator.
+
+ComputerGuess := RandomRange(1, 1000);
+
+Writeln('Hello friend!');
+Writeln('Wanna play a game...');
+Writeln('So I will guess a number between 1 and 1000, and you have to tell me what I have thought of...');
+
+Writeln(ComputerGuess);
+While (ComputerGuess <> UserGuess)
+  do
+    begin
+      Writeln('so try me: ');
+      Readln(UserGuess);
+      if ((UserGuess - ComputerGuess) >= 500)
+        then Writeln('...too high.')
+      else
+        if ((ComputerGuess - UserGuess) >= 500)
+        then Writeln('...too low.')
+      else
+        if (ComputerGuess = UserGuess)
+        then
+          begin
+            Writeln('You got it, motherbutler');
+            Writeln('You defeated me!');
+            Writeln('YOU WON!');
+          end;
+    end;
+
+Readln;
+  { TODO -oUser -cConsole Main : Insert code here }
+end.

@@ -1,0 +1,25 @@
+program ex101;
+{
+Write a program that reads in 5 lines of text the user types in at the keyboard. As each line is typed in, the program should write the line to a text file, using Readln and Writeln.
+}
+{$mode objfpc}{$H+}
+
+uses
+  SysUtils,
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes
+  { you can add units after this };
+
+var
+  f:textfile;
+
+begin
+  assignfile(f, 'TextFile.txt');
+  rewrite(f);
+  writeln(f, 'Hello - This Is A Test');
+  writeln(f, 'This Is Line #2');
+  close(f);
+end.
+

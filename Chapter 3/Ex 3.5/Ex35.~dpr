@@ -1,0 +1,31 @@
+program Ex35;
+{
+Write a program to enter the length, width and depths at the deepest and shallowest ends of
+a rectangular swimming pool. Calculate the volume of water required to fill the pool,
+and display this volume.
+}
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+    length, width, depth1, depth2, avg_depth, volume : Real;
+
+begin
+  Writeln('We are going to calculate the volume of water required to fill the pool: ');
+  Write('enter the length: ');
+  Readln(length);
+  Write('enter the width: ');
+  Readln(width);
+  Write('enter the depth1 (shallow): ');
+  Readln(depth1);
+  Write ('enter the depth2 (deep): ');
+  Readln(depth2);
+  avg_depth := (depth1 + depth2)/2;
+  volume := avg_depth * length * width;
+  Writeln('The volume of water required to fill a pool with dimensions ', length:5:2, ' length, ', width:5:2, ' width, ', avg_depth:5:2, ' average depth ', ' is ', volume:5:2);
+  Readln;
+  { TODO -oUser -cConsole Main : Insert code here }
+end.

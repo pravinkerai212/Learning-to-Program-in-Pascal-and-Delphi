@@ -1,0 +1,27 @@
+program Hello;
+
+// Do NOT remove this line. It is a vital compiler directive.
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+begin
+// Your program statement goes here.
+  Writeln('Hello World');
+  // The compiler will highlight the line on or near which it found a sytnax error.
+  // In the Compiler Messages Window you will find the error message(s).
+  // The semicolon separates statements.
+  Readln;
+  // The Readln statement waits for the user to press the Enter key, and therefore the console
+  // window will stay open until you press the Enter key.
+
+  // Now check your folder again. You should see the object code file. When you choose the run
+  // command, the compiler first produces object code from your program.
+
+  // This is saved and can be executed again and again without recompiling, until you edit
+  // your Pascal program. Then it needs to be recompiled.
+  
+  { TODO -oUser -cConsole Main : Insert code here }
+end.
+ 

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\fpc.exe" Date="1195613038"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiC:\Users\d3v5dham\Desktop\pascal 1-8 progs\Chapter 8\Ex 8.1\lib\i386-win32&quot; &quot;-FuC:\Users\d3v5dham\Desktop\pascal 1-8 progs\Chapter 8\Ex 8.1\&quot; &quot;-FUC:\Users\d3v5dham\Desktop\pascal 1-8 progs\Chapter 8\Ex 8.1\lib\i386-win32\&quot; ex81.lpr"/>
+</CONFIG>

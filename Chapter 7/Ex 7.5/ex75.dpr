@@ -1,0 +1,41 @@
+program ex75;
+{
+Using the statements on the previous page, write a program which asks the user for the subjects done in each
+period for each day and then prints out the timetable with suitable headings.
+}
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  TimeTable : array [1..4, 1..5] of String;
+  Day, Lesson : Integer;
+
+begin
+  for Day := 1 to 5 do
+    for Lesson := 1 to 4 do
+      begin
+        write('Day ', Day, ' Lesson ', Lesson, ' is: ');
+        readln(TimeTable[Lesson, Day]);
+      end;
+
+  writeln;
+  writeln;
+  writeln('                 MON         TUE         WED         THU         FRI');
+
+  for Lesson := 1 to 4 do
+    begin
+      write('Lesson ', Lesson);
+      for Day := 1 to 5 do
+        begin
+          write('         ', TimeTable[Lesson, Day]);
+        end;
+    writeln;
+    end;
+
+
+  readln;
+  { TODO -oUser -cConsole Main : Insert code here }
+end.

@@ -1,0 +1,21 @@
+program ex42;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  age : Integer;
+
+begin
+Write('Hello, how old are you? ');
+Readln(age);
+
+if (age>18)
+  then Writeln('You can drive a car')
+  else Writeln('You CANNOT drive a car');
+
+Readln;
+  { TODO -oUser -cConsole Main : Insert code here }
+end.

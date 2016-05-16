@@ -1,0 +1,41 @@
+program ex69;
+{
+Write a program that asks the user to enter a sentence, terminated by a full stop and the
+pressing of the Enter key. The program should count the number of words and display the
+result.
+
+HINT:
+A word will end with a space or a full stop.
+}
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+Var
+  aMessage : Char;
+  noOfWords : Integer;
+  aCode : Integer;
+
+begin
+Writeln('This program counts the number of words and displays the result');
+Writeln('Please type a sentence, below: ');
+Writeln('');
+noOfWords := 0;
+repeat
+  begin
+    Read(aMessage);
+    aCode := Ord (aMessage);
+    if (aCode = 32) or (aCode = 46)
+      then noOfWords := noOfWords + 1;
+  end
+until Eoln;
+
+Writeln('');
+Writeln('Number of words: ', noOfWords);
+
+Readln;
+Readln;
+  { TODO -oUser -cConsole Main : Insert code here }
+end.

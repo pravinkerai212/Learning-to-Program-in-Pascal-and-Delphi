@@ -1,0 +1,50 @@
+program ex519;
+{
+Write a program that takes two letters as input and displays all the letters of the
+alphabet between the two supplied letters (inclusive).
+
+For example, EJ produces
+
+  EFGHIJ
+
+The letters are to be printed in the order in which the specified letters are supplied.
+
+GB should produce
+
+  GFEDCB
+}
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  begin_letter, end_letter, Letter : Char;
+
+begin
+Writeln('This is a special program:');
+Writeln('It prints all the letters of the alphabet between the two supplied letters (inclusive)');
+
+Write('Please enter a letter to begin with: ');
+Readln(begin_letter);
+Write('and a letter to end with: ');
+Readln(end_letter);
+
+{
+if begin_letter > Letter
+  then
+    begin
+      for Letter := begin_letter to end_letter do Write (Letter);
+    end
+  else
+    begin
+      for Letter := end_letter to begin_letter do Write (Letter);
+    end;
+}
+
+for Letter := end_letter to begin_letter do Write (Letter);
+
+Readln;
+  { TODO -oUser -cConsole Main : Insert code here }
+end.
